@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: #f0f0f0;
+    background-image: url('https://img.freepik.com/premium-photo/elegant-artistic-image-natureai-generated-flowers-primroses-beautiful-gentle-light-vintage-background_372999-9206.jpg?w=900');
+    fill: url('https://img.freepik.com/premium-photo/elegant-artistic-image-natureai-generated-flowers-primroses-beautiful-gentle-light-vintage-background_372999-9206.jpg?w=900'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  .container {
+    background: rgba(244, 247, 246, 0.708);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(235, 175, 175, 0.708);
+    width: 80%; /* Set width or other styles as needed */
+  max-width: 600px; /* Example maximum width */
+  padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgba(208, 208, 39, 0.71)0;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    border-radius: 10px;
+    background: rgba(245, 243, 242, 0.945);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cell:hover {
+    background: rgba(10, 203, 246, 0.7);
+  }
+  
+  .status {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(23, 74, 74);
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #34dbbf;
+    color: rgb(232, 63, 63);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(244, 200, 223);
+  }
+/* Apply styles to the wrapper and container */
+.wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  /* Add specific styles for your container */
+  width: 80%; /* Set width or other styles as needed */
+  max-width: 600px; /* Example maximum width */
+  padding: 20px;
+  background: rgba(244, 247, 246, 0.708);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(235, 175, 175, 0.708);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px; /* Optional: Add padding to the wrapper on mobile */
+  }
+
+  .container {
+    width: 100%; /* Full width on mobile */
+    border-radius: 0; /* Optional: Remove border radius on mobile */
+    box-shadow: none; /* Optional: Remove box shadow on mobile */
+  }
+}
+
+  
